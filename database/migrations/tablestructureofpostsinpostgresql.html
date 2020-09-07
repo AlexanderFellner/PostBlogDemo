@@ -1,0 +1,7 @@
+CREATE TABLE public.posts ( id bigint NOT NULL GENERATED ALWAYS AS IDENTITY (
+INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 9223372036854775807 CACHE 1 ), title
+character varying(255) COLLATE pg_catalog."default" NOT NULL DEFAULT
+NULL::character varying, content character varying(255) COLLATE
+pg_catalog."default" NOT NULL DEFAULT NULL::character varying, created_at
+timestamp without time zone, updated_at timestamp without time zone, CONSTRAINT
+posts_pkey PRIMARY KEY (id) )
